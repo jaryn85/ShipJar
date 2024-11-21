@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: shipjar_web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html:rw
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=magento
+      - MYSQL_USER=magento
+      - MYSQL_PASSWORD=magento
+    depends_on:
+      - db
+      - elasticsearch
+
+  db:
+    image: mariadb:10.4
+    container_name: shipjar_db
+    ports:
+      - "3308:3306" # Databáze používá port 3308
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: magento
+      MYSQL_USER: magento
+      MYSQL_PASSWORD: magento
+    volumes:
+      - db_data:/var/lib/mysql
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    container_name: shipjar_elasticsearch
+    environment:
+      - discovery.type=single-node
+      - cluster.name=magento
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1g -Xmx1g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+
+volumes:
+  db_data:
+  es_data:

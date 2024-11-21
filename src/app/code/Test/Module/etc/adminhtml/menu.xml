@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/menu.xsd">
+    <menu>
+        <add id="Test_Module::page"
+             title="Test Page"
+             module="Test_Module"
+             sortOrder="10"
+             parent="Magento_Backend::content"
+             action="test_module/page/index"
+             resource="Test_Module::page"/>
+    </menu>
+</config>

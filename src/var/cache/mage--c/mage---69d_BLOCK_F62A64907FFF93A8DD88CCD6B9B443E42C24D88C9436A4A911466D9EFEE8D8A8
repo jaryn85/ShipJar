@@ -1,0 +1,84 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1732195150;s:6:"expire";i:1732281550;s:4:"tags";s:57:"69d_CAT_P,69d_BLOCK_HTML,69d_CAT_P_1,69d_CAT_C_2,69d_MAGE";}
+        <ol class="product-items widget-product-carousel">
+                            <li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost:8080/hodinky.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-1">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost:8080/media/catalog/product/cache/dce667bb2db900ae0d2520685f5a5512/w/a/watch-thumbnail.png"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="hodinky"/></span>
+</span>
+<style>.product-image-container-1 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-1 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-1 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="hodinky"
+                           href="http://localhost:8080/hodinky.html"
+                           class="product-item-link">
+                            hodinky                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="1" data-price-box="product-id-1">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-1-widget-product-carousel"                data-price-amount="499"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">499,00 Kč</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="1442" action="http://localhost:8080/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdDo4MDgwLw~~/product/1/" method="post">
+                                                <input type="hidden" name="product" value="1">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdDo4MDgwL2NoZWNrb3V0L2NhcnQvYWRkL3VlbmMvYUhSMGNEb3ZMMnh2WTJGc2FHOXpkRG80TURnd0x3fn4vcHJvZHVjdC8xLw~~">
+                                                <input name="form_key" type="hidden" value="31vEwEUYdscfhvQV" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "1442"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost:8080\/wishlist\/index\/add\/","data":{"product":1,"uenc":"aHR0cDovL2xvY2FsaG9zdDo4MDgwLw~~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost:8080\/catalog\/product_compare\/add\/","data":{"product":"1","uenc":"aHR0cDovL2xvY2FsaG9zdDo4MDgwLw~~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+            </li>            </ol>

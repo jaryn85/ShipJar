@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/config.xsd">
+    <default>
+        <carriers>
+            <getready_shipping>
+                <active>1</active>
+                <title>Getready Doprava</title>
+                <price>99</price>
+                <model>Getready\Shipping\Model\Carrier</model>
+                <name>Getready Shipping</name>
+                <sort_order>10</sort_order>
+                <sallowspecific>0</sallowspecific>
+            </getready_shipping>
+        </carriers>
+    </default>
+</config>

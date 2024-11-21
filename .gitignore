@@ -1,0 +1,29 @@
+# Systémové soubory a adresáře
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+/.vscode
+/.idea
+/.gitattributes
+.DS_Store
+
+!/app/etc/config.php
+!/app/etc/env.php
+
+/generated/*
+/var/*
+/pub/static/*
+/pub/media/*.*
+
+# Výjimky pro .htaccess
+!/pub/media/.htaccess
+!/pub/static/.htaccess
+!/var/.htaccess
+!/generated/.htaccess
+
+/vendor/*
+!/vendor/.htaccess
+
+/node_modules
